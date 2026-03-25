@@ -3,5 +3,5 @@ services:
     name: information-visualization-dashboard
     env: python
     plan: free
-    buildCommand: pip install -r requirements.txt
+    buildCommand: pip install --upgrade pip setuptools wheel && pip install -r requirements.txt
     startCommand: gunicorn app:server --bind 0.0.0.0:$PORT
