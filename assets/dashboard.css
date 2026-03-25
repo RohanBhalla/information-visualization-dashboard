@@ -1,0 +1,39 @@
+/* Slightly larger year labels on the range slider (Dash dcc.RangeSlider) */
+.rc-slider-mark {
+  font-size: 1rem !important;
+}
+
+.rc-slider-mark-text {
+  font-size: 1rem !important;
+}
+
+/* Visual grouping: each chart area is clearly separated from the next */
+.chart-section-block {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  background-color: #f8f9fa;
+  padding: 1.25rem 1.5rem 1.5rem;
+  margin-bottom: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+/* Even gutter between the 2×2 chart columns and rows */
+.dashboard-chart-grid-row {
+  --bs-gutter-x: 1.75rem;
+  --bs-gutter-y: 1.75rem;
+}
+
+/* Section headings above each chart — uniform size (Bootstrap h5 defaults vary by context) */
+h5.chart-section-title {
+  font-size: 1.75rem !important;
+  line-height: 1.25;
+}
+
+/* KPI cards — larger tooltip body text (Bootstrap / dbc.Tooltip) */
+.tooltip .tooltip-inner {
+  font-size: 1.125rem !important;
+  line-height: 1.45;
+  max-width: min(400px, 92vw);
+  text-align: left;
+  padding: 0.65rem 0.85rem;
+}
